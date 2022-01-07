@@ -9,4 +9,8 @@ public enum RoomType {
     RoomType(int capacity) {
         this.capacity = capacity;
     }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
 }
