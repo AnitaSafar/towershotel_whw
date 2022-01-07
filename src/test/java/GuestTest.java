@@ -16,4 +16,10 @@ public class GuestTest {
     public void hasName() {
         assertEquals("Will Smith", guest.getName());
     }
+
+    @Test
+    public void canSetName() {
+        guest.setName("Willard Smith");
+        assertEquals("Willard Smith", guest.getName());
+    }
 }
