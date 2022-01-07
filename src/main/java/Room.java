@@ -10,4 +10,7 @@ public abstract class Room {
         this.collection = new ArrayList<Guest>();
     }
 
+    public int getCapacity() {
+        return this.capacity;
+    }
 }
