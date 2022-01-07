@@ -1,0 +1,14 @@
+public class GuestTest {
+
+    private Guest guest;
+
+    @Before
+    public void before() {
+        guest = new Guest("Will Smith");
+    }
+
+    @Test
+    public void hasName() {
+        assertEquals("Will Smith", guest.getName());
+    }
+}
