@@ -8,4 +8,8 @@ public class Bedroom extends Room {
         this.roomNumber = roomNumber;
         this.roomType = roomType;
     }
+
+    public int getRoomNumber() {
+        return this.roomNumber;
+    }
 }
