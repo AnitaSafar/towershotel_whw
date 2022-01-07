@@ -13,4 +13,8 @@ public abstract class Room {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public int guestCount() {
+        return this.collection.size();
+    }
 }
