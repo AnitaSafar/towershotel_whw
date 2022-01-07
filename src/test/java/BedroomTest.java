@@ -41,6 +41,12 @@ public class BedroomTest {
     }
 
     @Test
+    public void canSetRoomType() {
+        bedroom.setRoomType(RoomType.FAMILY);
+        assertEquals(RoomType.FAMILY, bedroom.getRoomType());
+    }
+
+    @Test
     public void canAddGuest() {
         bedroom.addGuest(guest1);
         assertEquals(1, bedroom.guestCount());

@@ -20,4 +20,8 @@ public class Bedroom extends Room {
     public RoomType getRoomType() {
         return this.roomType;
     }
+
+    public void setRoomType(RoomType roomType) {
+        this.roomType = roomType;
+    }
 }
