@@ -12,4 +12,8 @@ public class Bedroom extends Room {
     public int getRoomNumber() {
         return this.roomNumber;
     }
+
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
 }
