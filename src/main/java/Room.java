@@ -17,4 +17,10 @@ public abstract class Room {
     public int guestCount() {
         return this.collection.size();
     }
+
+    public void addGuest(Guest guest) {
+        if (getCapacity() > guestCount()) {
+            this.collection.add(guest);
+        }
+    }
 }

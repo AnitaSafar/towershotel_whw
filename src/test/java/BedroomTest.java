@@ -25,4 +25,5 @@ public class BedroomTest {
         bedroom.addGuest(guest1);
         assertEquals(1, bedroom.guestCount());
     }
+
 }
