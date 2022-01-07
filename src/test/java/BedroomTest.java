@@ -9,7 +9,7 @@ public class BedroomTest {
 
     @Before
     public void before() {
-        bedroom = new Bedroom(2, "Tom Hanks", "Chuck Noland", 416, RoomType.DOUBLE);
+        bedroom = new Bedroom(2,416, RoomType.DOUBLE);
     }
 
     @Test
