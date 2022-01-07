@@ -10,4 +10,10 @@ public class Guest {
     public String getName() {
         return this.name;
     }
+
+    public void setName(String name) {
+        if (name != null) {
+            this.name = name;
+        }
+    }
 }
