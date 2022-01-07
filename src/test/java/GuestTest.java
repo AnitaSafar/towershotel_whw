@@ -22,4 +22,10 @@ public class GuestTest {
         guest.setName("Willard Smith");
         assertEquals("Willard Smith", guest.getName());
     }
+
+    @Test
+    public void nameIsNotNull() {
+        guest.setName(null);
+        assertEquals("Will Smith", guest.getName());
+    }
 }
