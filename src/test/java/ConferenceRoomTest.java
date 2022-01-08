@@ -22,4 +22,10 @@ public class ConferenceRoomTest {
         assertEquals("Green", conferenceRoom.getName());
     }
 
+    @Test
+    public void canSetName() {
+        conferenceRoom.setName("Hulk");
+        assertEquals("Hulk", conferenceRoom.getName());
+    }
+
 }
