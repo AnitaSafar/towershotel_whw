@@ -7,9 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 public class HotelTest {
 
-    private Room room1;
-    private Room room2;
-
     private Bedroom bedroom1;
     private Bedroom bedroom2;
 
@@ -42,19 +39,30 @@ public class HotelTest {
     }
 
     @Test
+    public void hasConferenceRooms() {
+        hotel.addConferenceRoomToHotel(conferenceRoom1);
+        assertEquals(1, hotel.numberOfConferenceRooms());
+    }
+
+    @Test
     public void canAddGuestToBedroom() {
-        room1 = new Bedroom(1, 202, RoomType.SINGLE);
-        room1.addGuest(guest1);
-        assertEquals(1, room1.guestCount());
+        bedroom1.addGuest(guest1);
+        assertEquals(1, bedroom1.guestCount());
     }
 
     @Test
     public void canRemoveGuestFromBedroom() {
-        room2 = new Bedroom(3, 112, RoomType.TRIPLE);
-        room2.addGuest(guest1);
-        room2.addGuest(guest2);
-        room2.addGuest(guest3);
-        room2.removeGuest(guest2);
-        assertEquals(2, room2.guestCount());
+        bedroom2.addGuest(guest1);
+        bedroom2.addGuest(guest2);
+        bedroom2.addGuest(guest3);
+        bedroom2.removeGuest(guest2);
+        assertEquals(2, bedroom2.guestCount());
+    }
+
+    @Test
+    public void canNotAddMoreGuestThanCapacity() {
+        bedroom1.addGuest(guest1);
+        bedroom1.addGuest(guest2);
+        assertEquals(1, bedroom1.guestCount());
     }
 }

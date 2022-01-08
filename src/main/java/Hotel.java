@@ -17,4 +17,14 @@ public class Hotel {
     public void addBedroomToHotel(Bedroom bedroom) {
         this.bedrooms.add(bedroom);
     }
+
+    public int numberOfConferenceRooms() {
+        return this.conferenceRooms.size();
+    }
+
+    public void addConferenceRoomToHotel(ConferenceRoom conferenceRoom) {
+        this.conferenceRooms.add(conferenceRoom);
+    }
+
+
 }
