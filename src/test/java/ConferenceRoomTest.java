@@ -28,4 +28,9 @@ public class ConferenceRoomTest {
         assertEquals("Hulk", conferenceRoom.getName());
     }
 
+    @Test
+    public void hasEvent() {
+        assertEquals("Meeting", conferenceRoom.getEvent());
+    }
+
 }
