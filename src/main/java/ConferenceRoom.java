@@ -20,5 +20,9 @@ public class ConferenceRoom extends Room {
     public String getEvent() {
         return this.event;
     }
+
+    public void setEvent(String event) {
+        this.event = event;
+    }
 }
-}
+

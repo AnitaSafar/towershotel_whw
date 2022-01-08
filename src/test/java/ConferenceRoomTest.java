@@ -33,4 +33,9 @@ public class ConferenceRoomTest {
         assertEquals("Meeting", conferenceRoom.getEvent());
     }
 
+    @Test
+    public void canSetEvent() {
+        conferenceRoom.setEvent("Wedding");
+        assertEquals("Wedding", conferenceRoom.getEvent());
+    }
 }
