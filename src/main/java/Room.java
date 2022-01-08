@@ -23,4 +23,9 @@ public abstract class Room {
             this.collection.add(guest);
         }
     }
+    public void removeGuest(Guest guest) {
+        if (getCapacity() <= guestCount()) {
+            this.collection.remove(guest);
+        }
+    }
 }
