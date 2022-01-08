@@ -65,4 +65,10 @@ public class HotelTest {
         bedroom1.addGuest(guest2);
         assertEquals(1, bedroom1.guestCount());
     }
+
+    @Test
+    public void canAddGuestToConferenceRoom() {
+        conferenceRoom1.addGuest(guest3);
+        assertEquals(1, conferenceRoom1.guestCount());
+    }
 }
