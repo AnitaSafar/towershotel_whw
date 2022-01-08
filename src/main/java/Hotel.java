@@ -3,15 +3,18 @@ import java.util.ArrayList;
 public class Hotel {
 
     private ArrayList<Bedroom> bedrooms;
-    private ArrayList<ConferenceRoom> conferencerooms;
+    private ArrayList<ConferenceRoom> conferenceRooms;
 
     public Hotel() {
         this.bedrooms = new ArrayList<Bedroom>();
-        this.conferencerooms = new ArrayList<ConferenceRoom>();
+        this.conferenceRooms = new ArrayList<ConferenceRoom>();
     }
 
     public int numberOfBedrooms() {
         return this.bedrooms.size();
     }
 
+    public void addBedroomToHotel(Bedroom bedroom) {
+        this.bedrooms.add(bedroom);
+    }
 }
