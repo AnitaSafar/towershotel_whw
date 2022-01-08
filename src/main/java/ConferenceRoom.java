@@ -8,6 +8,8 @@ public class ConferenceRoom extends Room {
         this.name = name;
         this.event = event;
     }
-
     
+    public String getName() {
+        return this.name;
+    }
 }

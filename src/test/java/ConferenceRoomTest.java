@@ -17,4 +17,9 @@ public class ConferenceRoomTest {
         assertEquals(5, conferenceRoom.getCapacity());
     }
 
+    @Test
+    public void hasName() {
+        assertEquals("Green", conferenceRoom.getName());
+    }
+
 }
